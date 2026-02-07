@@ -2,6 +2,8 @@
 
 **Project:** Turn-Based Tic-Tac-Toe
 
+![Tic Tac Toe](https://upload.wikimedia.org/wikipedia/commons/3/32/Tic_tac_toe.svg)
+
 ## Objective
 
 สร้าง Web Application เกม Tic-Tac-Toe แบบ Multiplayer โดยเน้นทดสอบทักษะ System Design, Database Integrity, Concurrency Handling และ Deployment เป้าหมายไม่ใช่แค่การสร้างเกมที่ **เล่นได้** แต่ต้องเป็นระบบที่ **เสถียรและเชื่อถือได้**
@@ -144,15 +146,22 @@ sequenceDiagram
 
 1. **Bot Mode (The Unbeatable):**
   
-  - เพิ่มโหมดเล่นกับ Bot
-    
-  - Bot ต้องทำงานที่ฝั่ง Server-side
-    
-  - Implement Algorithm ที่ทำให้ Bot **ไม่มีวันแพ้** (เสมอหรือชนะเท่านั้น) โดยเปิดกว้างให้ผู้สมัครค้นคว้าและเลือกใช้วิธีการหรือ Algorithm ที่เหมาะสมที่สุดด้วยตนเอง
-    
+  - เพิ่มโหมดเล่นกับ Bot  
+  - Bot ต้องทำงานที่ฝั่ง Server-side  
+  - Implement Algorithm ที่ทำให้ Bot **ไม่มีวันแพ้** (เสมอหรือชนะเท่านั้น) โดยเปิดกว้างให้ผู้สมัครค้นคว้าและเลือกใช้วิธีการหรือ Algorithm ที่เหมาะสมที่สุดด้วยตนเอง  
+
 2. **Concurrency Test Script:**
   
-  - เขียน Script (Unit Test หรือ Integration Test) เพื่อจำลองการยิง Request พร้อมกัน (Race Condition) และพิสูจน์ว่าระบบของคุณป้องกันได้จริง
+  - เขียน Script (Unit Test หรือ Integration Test) เพื่อจำลองการยิง Request พร้อมกัน (Race Condition)  
+  - พิสูจน์ว่าระบบของคุณสามารถป้องกันปัญหาเช่น การเล่นซ้อนตา, state เพี้ยน หรือ bot ทำงานซ้ำได้จริง  
+
+3. **UI / UX Enhancement:**
+  
+  - ออกแบบ UI ให้สวยงาม ทันสมัย
+  - Responsive รองรับการใช้งานทุกอุปกรณ์ (Mobile / Tablet / Desktop)  
+  - UX ต้องเข้าใจง่าย ไม่ซับซ้อน  
+  - แสดงสถานะเกมอย่างชัดเจน (ตาใครเล่น, ชนะ/แพ้/เสมอ)  
+  - มี feedback ต่อการกระทำของผู้เล่น เช่น animation, highlight หรือข้อความแจ้งเตือน
 
 ---
 
